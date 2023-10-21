@@ -1,0 +1,230 @@
+/* Add root variables */
+:root {
+  --color-primary: #98aa28;
+  --color-secondary: #a2bdaa;
+  --color-body-text: #78847d;
+  --color-dark-green: #253d32;
+  --color-logo: #f6fbf9;
+  --color-title: #253d32;
+  --color-line: #78847d4d;
+  --color-span: #d1d5d2;
+  --font-primary: "Rubik", sans-serif;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/Rubik-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary) !important;
+}
+
+/********* Jumbtron **********/
+.jumbtron {
+  background: url("../images/hero-bg.png") center/cover no-repeat #f1f1f1;
+  background-size: 100% 100%;
+  height: 95vh !important;
+  max-height: auto;
+}
+
+.jumbtron .header button {
+  background-color: var(--color-dark-green);
+  border-color: var(--color-primary);
+}
+
+/* Header */
+.navAndButton {
+  justify-content: space-between !important;
+}
+
+.navAndButton ul {
+  margin-left: 20%;
+}
+
+/* Hero */
+.hero {
+  height: 55% !important;
+  padding-top: 6%;
+}
+
+.hero h5 {
+  font-size: 7.5vw;
+  letter-spacing: 1.5px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.hero span {
+  font-size: 36px;
+  color: var(--color-span);
+}
+
+.hero p {
+  font-size: 22px;
+  color: var(--color-secondary);
+  line-height: 35px;
+}
+
+.hero .getStarted,
+#services .getStarted,
+.contact .getStarted {
+  background-color: var(--color-primary) !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/********* logos **********/
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--color-logo);
+}
+
+.logo img {
+  width: 70%;
+}
+
+/********* services **********/
+#services {
+  padding-top: 100px !important;
+  height: 100vh !important;
+}
+
+#services h2 {
+  font-weight: bold;
+  color: var(--color-title);
+  font-size: 42px;
+}
+
+#services h5 {
+  color: var(--color-title);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#services p {
+  color: var(--color-body-text);
+  font-size: 18px;
+}
+
+#services p.para {
+  color: var(--color-body-text);
+  font-size: 22px;
+}
+
+#services .serviceContent {
+  height: 100% !important;
+}
+
+#services .serviceContent .content {
+  height: 80% !important;
+}
+
+/********* Articles **********/
+#articles h2 {
+  font-weight: bold;
+  color: var(--color-title);
+  font-size: 36px;
+}
+
+#articles h5.title {
+  font-size: 26px !important;
+}
+
+#articles h5 {
+  font-size: 24px !important;
+}
+
+#articles .article p {
+  color: var(--color-body-text);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/********* ContactUs **********/
+.contact {
+  background-color: var(--color-dark-green) !important;
+  padding: 200px 82px 90px !important;
+}
+
+::placeholder {
+  color: black !important;
+  font-weight: bold;
+}
+
+/********* Footer **********/
+.line {
+  height: 1.2px;
+  background-color: var(--color-line) !important;
+}
+
+.footer ul a,
+.footer p {
+  color: var(--color-body-text) !important;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.footer .social-media a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white !important;
+  background-color: var(--color-secondary) !important;
+}
+
+/********* CopyRights **********/
+.copyrights {
+  color: var(--color-body-text);
+}
+
+/********* Media **********/
+@media screen and (max-width: 990px) {
+  .navAndButton ul,
+  .navAndLogo .freeTrial {
+    margin-left: 32% !important;
+  }
+
+  .navAndLogo {
+    position: relative !important;
+  }
+
+  .navAndButton {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #services {
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+
+  #services .serviceContent .content {
+    padding-top: 50px;
+  }
+
+  #articles .article {
+    margin-bottom: 30px !important;
+  }
+
+  #articles .article {
+    margin-bottom: 30px !important;
+  }
+
+  #articles .article .article-two img,
+  #articles .article .article-three img {
+    display: block;
+    width: 100%;
+  }
+}
